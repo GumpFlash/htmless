@@ -1,6 +1,6 @@
 {
   "name": "@gumpflash/htmless",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Use JS without HTML",
   "main": "libs/index.js",
   "scripts": {

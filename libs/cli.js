@@ -57,13 +57,14 @@ function bundle(file){
                 if(!["addDir","add"].includes(event)){
                     console.clear();
                     console.log("Compiling...");
-                    var bundleFs = await fs.createWriteStream(path);
+                    var bundleFs2 = await fs.createWriteStream(path);
                     var b = await browserify();
                     await b.add(file);
-                    await b.bundle().pipe(bundleFs);
-                    ws.send('reload');
-                    console.clear();
-                    console.log("Running on http://localhost:3001");
+                    await b.bundle().pipe(bundleFs2).on("finish",()=>{
+                        ws.send('reload');
+                        console.clear();
+                        console.log("Running on http://localhost:3001");
+                    });
                 }
             });
         });
