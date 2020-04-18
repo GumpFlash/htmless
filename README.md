@@ -21,7 +21,7 @@ will make an unique index.html file with all scripts.
 
 ## Dependencies
 * browserify
-* chokidar
+* watchify
 * esm
 * opn
 * tmp
