@@ -62,6 +62,7 @@ function bundle(file){
                     await b.add(file);
                     await b.bundle().pipe(bundleFs);
                     ws.send('reload');
+                    console.clear();
                     console.log("Running on http://localhost:3001");
                 }
             });
