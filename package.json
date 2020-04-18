@@ -1,0 +1,38 @@
+{
+  "name": "@gumpflash/htmless",
+  "version": "1.0.0",
+  "description": "Use JS without HTML",
+  "main": "libs/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "@gumpflash/htmless": "bin/htmless",
+    "htmless": "bin/htmless"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "cli",
+    "htmless"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GumpFlash/htmless.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GumpFlash/htmless/issues"
+  },
+  "homepage": "https://github.com/GumpFlash/htmless#readme",
+  "dependencies": {
+    "browserify": "^16.5.1",
+    "chokidar": "^3.3.1",
+    "esm": "^3.2.25",
+    "opn": "^6.0.0",
+    "tmp": "^0.1.0",
+    "ws": "^7.2.3"
+  }
+}
